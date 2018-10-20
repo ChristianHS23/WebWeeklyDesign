@@ -120,7 +120,7 @@ html, body {
     border-bottom: 2px solid seagreen;
   }
   .contact{
-      background-image: url("background1.png");
+      background-image: url("background3.jpg");
       position: relative;
       display: inline-block;
       width: 100%;
@@ -128,7 +128,7 @@ html, body {
       margin: 0px auto;
   }
   .aboutus{
-    background-image: url("backgroundmain.png");
+    background-image: url("background3.jpg");
     position: relative;
     display: inline-block;
     width: 100%;
@@ -165,7 +165,7 @@ td{
 
   }
   
-  .supporting {
+  .supporting , .team {
     padding-top: 20px;
     padding-bottom: 100px;
     display:inline-block;
@@ -228,3 +228,24 @@ td{
       width: 100%;
     }
   }
+
+  .grid-container{
+	display: grid;
+ 	grid-template-columns: auto ;
+  }
+  .grid-item {
+    color: black;
+        max-width: 300px;
+        text-align: center;
+        margin: 20px auto;
+    
+    }
+    .gambar{
+        border-radius: 50%;
+        border: 1px solid 	#D3D3D3;
+        padding: 10px;
+        height:120px;
+        width:120px;
+    }
+  
+    
