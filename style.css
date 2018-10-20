@@ -172,8 +172,6 @@ td{
     position: relative;
     width: 100%;
     background-image: url("background1.png");
- 
-    
   }
   
   .supporting .col {
@@ -194,7 +192,6 @@ td{
     text-transform: uppercase;
     opacity: 0.8;
   }
-  
   
   .supporting p , .aboutus p{
     font-weight: 400;
