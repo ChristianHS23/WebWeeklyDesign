@@ -1,11 +1,11 @@
-var generateXO=document.getElementById("GenerateXO")
-var curSaldo=document.getElementById("CurSaldo")
-var button=document.getElementById("button")
-var choose=document.getElementsByName("XO")
-var bet=document.getElementById("Bet")
-var saldo=500
-var generateXOstr=''
-console.log(choose)
+var generateXO=document.getElementById("GenerateXO") //berupa label
+var curSaldo=document.getElementById("CurSaldo") //berupa label
+var button=document.getElementById("button") // berupa button
+var choose=document.getElementsByName("XO") // berupa text input
+var bet=document.getElementById("Bet") // berupa text input
+var saldo=500 //saldo awal
+var generateXOstr='' 
+//console.log(choose)
 
 button.addEventListener('click', function(e){
     e.preventDefault()
@@ -17,14 +17,15 @@ button.addEventListener('click', function(e){
         alert("Minimum Bet is 100$")
     }else{
         generateXOstr= RgenerateXO()
-        generateXO.innerHTML=generateXOstr
-        console.log(generateXOstr)
-        curSaldo.innerHTML=saldo
+        generateXO.innerHTML=generateXOstr //memasukkan nilai generate xo kedalam html
+        //console.log(generateXOstr)
+        curSaldo.innerHTML=saldo // memasukkan nilai saldo kedalam html
         var countX=0
         var countO=0
         var xWins=false
         var oWins=false
         var chooseVal=''
+        //mencari nilai count x dan count o
         for(var i=0;i<generateXOstr.length;i++){
                 if(generateXOstr[i]=='X')
                     countX++
@@ -36,11 +37,13 @@ button.addEventListener('click', function(e){
         }else{
                 oWins=true
         }
+        //mencari pilihan yang dipilih user
         for(var j=0;j<choose.length;j++){
             if(choose[j].checked){
                 chooseVal=choose[j].value
             }
         }
+        //dari pilihan dan yang menang akan memberikan output 
         if(xWins&&chooseVal=='X'){
             saldo+=Number(bet.value)
             curSaldo.innerHTML=saldo
@@ -63,7 +66,7 @@ button.addEventListener('click', function(e){
 
     }
 })
-
+// Function ini digunakan untunk menggenerate nilai XO yang dirandom
 function RgenerateXO(){
     var tempcheckWin=false
     var tempStr=''
