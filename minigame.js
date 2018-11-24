@@ -1,8 +1,8 @@
 var generateXO=document.getElementById("GenerateXO") //berupa label
 var curSaldo=document.getElementById("CurSaldo") //berupa label
 var button=document.getElementById("button") // berupa button
-var choose=document.getElementsByName("XO") // berupa text input
-var bet=document.getElementById("Bet") // berupa text input
+var choose=document.getElementsByName("XO") // berupa radio input
+var bet=document.getElementById("Bet") // berupa number input
 var saldo=500 //saldo awal
 var generateXOstr='' 
 //console.log(choose)
