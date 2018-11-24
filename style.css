@@ -112,6 +112,8 @@ html, body {
     text-decoration: none;
     text-transform: uppercase;  
     margin-bottom: 20px;      
+    margin:auto;
+    display:block;
   }
   header nav a{
     color: #fff;
@@ -156,16 +158,16 @@ td{
     border: 1px solid #466995;
     margin: auto;
     display:inline-block;
-    position:relative
+    position:relative;
 
   }
 
   .answer:hover {
-    background: #C0D6DF;
+    background: rgb(15, 152, 206);
     color: #FFF;
 
   }
-  .supporting , .team {
+  .supporting , .team , .minigame{
     padding-top: 20px;
     padding-bottom: 100px;
     display:inline-block;

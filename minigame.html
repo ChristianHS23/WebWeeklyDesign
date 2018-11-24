@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="logo1.ico" />
+    <title>LinDya</title>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400, 600' rel='stylesheet' type='text/css'>
+    <link href='style.css' rel='stylesheet' type='text/css'/>
+</head>
+<body id="Home">
+    <header>
+        <nav>
+          <ul>
+            <!--Navigasi Bar-->
+              <li><a href="index.html#Home"> <img  style="border-radius: 80%; width: 50%;height: auto;" src="logo.png" ></a></li>
+              <li><a href="index.html#AboutUs"> About </a> </li>
+             <li><a href="index.html#Supporting"> Work </a> </li>
+              <li><a href="index.html#Team">Team </a> </li> 
+              <li><a href="index.html#Contact">Help Us!</a>  </li>
+              <li><a href="index.html#Minigame">Try Minigame</a></li>
+          </ul>
+        </nav>
+    </header>
+    
+     <!--Main Page-->
+    <div class="team" id="Team">
+      <main class="isi">
+        <h1>XO Mini Game</h1>
+        <p>Rules Game :Choose who will win between X and O 
+            <br> Then input how much do you want to bet(Min. Bet 100$) 
+            <br> If you win you will win 2 times value from the bet you input </p>
+        
+        <div class="xomg">
+            <form action="#" id="xogameF">
+                <table>
+                    <tr>
+                        <td><label for="GenerateXO">XO Result Before :</label></td>
+                        <td><label id="GenerateXO"></label></td>
+                    </tr>
+                    <tr>
+                        <td><label for="CurSaldo">Your Current Saldo($):</label></td>
+                        <td><label id="CurSaldo">500</label></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Choose Who will Win :</label></td>
+                        <td><input type="radio" name="XO" value="X">X Win
+                        <input type="radio" name="XO" value="O">O Win</td>
+                    </tr>
+                    <tr>
+                        <td><label for="">How Much Do You Want To Bet($):</label></td>
+                        <td><input type="number" id="Bet" value="100"></td>
+                    </tr>
+                </table>
+                <input type="submit" id="button" class="btn-default">
+            </form>
+        </div>
+      </main>
+    </div>
+     <!--Footer -->
+     <footer>
+        <div class="container">
+            <ul>
+                <li><p>&copy; Lin Dya 2018</p> </li>
+  
+            </ul>
+        </div>
+        <div class="container2">
+          <ul>
+           <li><p>e-mail : christian.sihotang23@gmail.com</p></li>
+           <li><p>Phone : +6281927284401</p></li>
+          </ul>
+        </div>      
+      </footer> 
+      <script src="minigame.js"></script>
+</body>
+</html>

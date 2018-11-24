@@ -18,6 +18,7 @@
              <li><a href="#Supporting"> Work </a> </li>
               <li><a href="#Team">Team </a> </li> 
               <li><a href="#Contact">Help Us!</a>  </li>
+              <li><a href="#Minigame">Try Minigame</a></li>
           </ul>
         </nav>
     </header>
@@ -123,21 +124,58 @@
             <div class="tblID">
              <tr>       
               <td><label for="full-name" class="getInfo">Full Name</label></td>
-              <td><input type="text" name="fullName" id="full-name" class="answer" placeholder="Your name" required></td>
+              <td><input type="text" name="fullName" id="full-name" class="answer" placeholder="Your name" ></td>
              </tr>
              <tr>      
               <td><label for="email" class="getInfo">Email</label></td>
-              <td><input type="text" name="eMail" id="email" class="answer" placeholder="name@email.com" required></td>
+              <td><input type="text" name="eMail" id="email" class="answer" placeholder="name@email.com" ></td>
+             </tr>
+             <tr>      
+              <td><label for="Cemail" class="getInfo">Coonfirm Email</label></td>
+              <td><input type="text" name="CeMail" id="Cemail" class="answer" placeholder="name@email.com" ></td>
              </tr>
              <tr>               
               <td><label style="position: absolute; top:0%; right: 0%;" for="comment">Your Comment</label></td>
-              <td><textarea name="'comment'" id="Comment" class="answer" cols="30" rows="10" placeholder="Your comment" required></textarea></td>
+              <td><textarea name="'comment'" id="Comment" class="answer" cols="30" rows="10" placeholder="Your comment" ></textarea></td>
              </tr>
             </div>
             </table>
-            <input type="submit" class="btn-default">
+            <input type="submit" id="button" class="btn-default">
          </form>
        </div>
+    </section>
+    <section id="Minigame" class="minigame" >
+      <div class="container">
+        <h2>Try Our New Minigame</h2>
+        <p>You need to sign up before you can try our new minigame!</p>
+      </div>
+      <form action="minigame.html" id="formchild">       
+        <table>
+         <div class="tblID">
+          <tr>       
+           <td><label for="username" class="getInfo">Username</label></td>
+           <td><input type="text" id="username" class="answer" placeholder="Your name" ></td>
+          </tr>
+          <tr>      
+           <td><label for="emailForm" class="getInfo">Email</label></td>
+           <td><input type="text" id="emailForm" class="answer" placeholder="name@email.com" ></td>
+          </tr>
+          <tr>      
+           <td><label for="CemailForm" class="getInfo">Coonfirm Email</label></td>
+           <td><input type="text"  id="CemailForm" class="answer" placeholder="name@email.com" ></td>
+          </tr>
+          <tr>
+            <td><label for="password" class="getInfo">Password</label></td>
+            <td><input type="password" id="password" class="answer" placeholder="Your Password"></td>
+          </tr>
+          <tr>
+            <td><label for="Cpassword" class="getInfo">Confirm Password</label></td>
+            <td><input type="password" id="Cpassword" class="answer" placeholder="Your Password"></td>
+          </tr>
+         </div>
+         </table>
+         <input type="submit" id="buttonForm" class="btn-default">
+      </form>
     </section>
     <!--Footer -->
     <footer>
@@ -153,6 +191,8 @@
          <li><p>Phone : +6281927284401</p></li>
         </ul>
       </div>      
-    </footer>   
+    </footer> 
+    <script src="validateForm.js"></script>  
+    <script src="validateMinigame.js"></script>
   </body>
 </html>
