@@ -12,7 +12,7 @@ button.addEventListener('click', function(e){
     if(saldo<100){
         alert("You are bankrupt , please relogin ")
     }else if(!choose[0].checked && !choose[1].checked){
-        alert("Choose X or W to Wins")
+        alert("Choose X or O to Wins")
     }else if(bet.value<100){
         alert("Minimum Bet is 100$")
     }else{
