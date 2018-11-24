@@ -7,7 +7,7 @@ var Cpassword=document.getElementById("Cpassword")
 
 button.addEventListener('click', function(e) {
     if( nameForm.value.length<6 || !valideNama(nameForm.value) ){
-        alert("Isi Nama , Nama minimal 6 karakter ")
+        alert("Isi Username , Username minimal 6 karakter ")
         e.preventDefault()
     }else if(!validateEmail(emailForm.value)){
         alert("Isi Email Dengan Format yang benar, Format me@mail.com")
@@ -28,15 +28,15 @@ button.addEventListener('click', function(e) {
 //Password Harus memiliki 1 Uppercase 1 Angka dan 8 Karakter
 function validatePassword(password){
     var re= /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/
-    return re.test(password)
+    return re.test(password) // akan mereturn false / true
 }
 //Isi Email Dengan Format yang benar, Format me@mail.com
 function validateEmail(email){
     var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return re.test(email);
+    return re.test(email); // akan mereturn false / true
 }
 //Isi Nama , Nama minimal 6 karakter 
 function valideNama(name){
     var re= /^[a-zA-Z' '0-9]+$/
-    return re.test(name)
+    return re.test(name) // akan mereturn false / true
 }
